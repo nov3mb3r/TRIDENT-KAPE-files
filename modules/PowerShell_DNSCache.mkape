@@ -1,0 +1,16 @@
+Description: DNS Cache
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: de132a71-6d48-4216-b831-2af68d9d8ce2
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-DnsClientCache -Status 'Success' | Select Name, Data"
+		ExportFormat: txt
+		ExportFile: net.txt
+		Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/module/dnsclient/get-dnsclientcache?view=windowsserver2022-ps

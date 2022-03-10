@@ -1,0 +1,16 @@
+Description: SMB Sessions
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: d89c4c38-0129-4f75-bfa2-e523cbabe8e3
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-SmbSession"
+		ExportFormat: txt
+		ExportFile: persistence.txt
+		Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/module/smbshare/get-smbsession?view=windowsserver2022-ps

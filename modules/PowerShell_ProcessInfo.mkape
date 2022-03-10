@@ -1,0 +1,16 @@
+Description: Running Processes
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: e7e7fd2b-c562-4842-806c-295ffed62204
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "tasklist /v /fo table /fi 'STATUS ne Unknown'"
+		ExportFormat: txt
+		ExportFile: processes.txt
+		Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tasklist
