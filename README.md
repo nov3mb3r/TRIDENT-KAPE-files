@@ -1,4 +1,4 @@
-# TRIDENT-KapeFiles
+# trident-KapeFiles
 A list of KAPE modules that were ported from TRIDENT project. More information on KAPE can be found on its official documentation page: https://ericzimmerman.github.io/KapeDocs/#!index.md
 
 The processed artifacts will be stored in each file respectively
