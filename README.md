@@ -40,7 +40,7 @@ The processed artifacts will be stored in each file respectively
 ### Advanced (advanced.txt)
 | Artifact | KapeFile |
 | --- | --- |
-| DLL List | PowerShell_DLL_Llist.mkape |
+| DLL List | PowerShell_DLL_List.mkape |
 | Named Pipes | PowerShell_NamedPipes.mkape |
 | Windows Defender Exclusions | PowerShell_Defender_Exclusions.mkape |
 | Total process count | PowerShell_Total_Processes.mkape |
