@@ -9,7 +9,7 @@ Processors:
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "Get-ChildItem -Path $env:USERPROFILE -Recurse -File | Sort-Object LastWriteTime -Descending | Select-Object -First 50 FullName, LastWriteTime"
 		ExportFormat: txt
-		ExportFile: user_activity.txt
+		ExportFile: account_activity.txt
 		Append: true
 
 # Documentation
