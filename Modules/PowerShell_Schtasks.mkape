@@ -1,0 +1,16 @@
+Description: Scheduled Tasks
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: 927442e6-2943-4f09-9d27-35e581adad98
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "(Get-ScheduledTask).Where({$_.State -ne "Disabled"}) | Sort TaskPath | Format-Table -Wrap"
+        ExportFormat: txt
+        ExportFile: persistence.txt
+        Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/get-scheduledtask?view=windowsserver2022-ps

@@ -1,0 +1,16 @@
+Description: WMI instances
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: f0905735-8e17-46f8-a3ad-449396f619d1
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject -Class __FilterToConsumerBinding -Namespace root\subscription | FT Consumer,Filter,__SERVER -wrap"
+        ExportFormat: txt
+        ExportFile: WMI.txt
+        Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-wmiobject?view=powershell-5.1

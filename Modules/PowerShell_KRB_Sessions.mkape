@@ -1,0 +1,16 @@
+Description: Kerberos Sessions
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: 4aa00dd4-8bf3-4f41-9eef-0ff979609893
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "klist sessions"
+        ExportFormat: txt
+        ExportFile: account_activity.txt
+        Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/klist

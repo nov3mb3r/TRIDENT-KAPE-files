@@ -1,0 +1,16 @@
+Description: Active RDP sessions
+Category: LiveResponse
+Author: November
+Version: 1.0
+Id: 4c502562-e327-4602-b90e-0796e5906cc5
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "qwinsta /server:localhost"
+        ExportFormat: txt
+        ExportFile: user_activity.txt
+        Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/qwinsta
