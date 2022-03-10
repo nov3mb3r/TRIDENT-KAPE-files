@@ -9,7 +9,7 @@ Processors:
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "klist sessions"
 		ExportFormat: txt
-		ExportFile: user_activity.txt
+		ExportFile: account_activity.txt
 		Append: true
 
 # Documentation
