@@ -8,7 +8,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Get-Nestat.ps1'"
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Get-Netscan.ps1'"
         ExportFormat: txt
         ExportFile: netscan.txt
 
